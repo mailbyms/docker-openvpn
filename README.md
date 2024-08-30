@@ -193,7 +193,7 @@ of a guarantee in the future.
 * Proper PKI support integrated into image
 * OpenVPN config files, PKI keys and certs are stored on a storage
   volume for re-use across containers
-* Addition of tls-auth for HMAC security
+* Addition of tls-crypt for HMAC security
 
 ## Originally Tested On
 
