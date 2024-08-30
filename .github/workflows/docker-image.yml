@@ -24,7 +24,7 @@ jobs:
       run: docker build . --file Dockerfile --tag my-image-name
     - name: Push image to Aliyun
       run: |
-        new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/openvpn  
+        new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/openvpn"
         docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
         docker tag my-image-name $new_image
         echo "docker push $new_image"
